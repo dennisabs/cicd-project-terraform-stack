@@ -96,7 +96,6 @@ resource "aws_instance" "web" {
   }
 
   tags = {
-  
     Name = "${format("nginx-hackaton-%03d", count.index + 1)}-"
   }
 }
