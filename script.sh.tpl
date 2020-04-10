@@ -18,4 +18,4 @@ docker pull $dockerImage
 
 docker run -d -p 80:80 $dockerImage
 
-echo "DONE!!"
+echo "DONE!!!"
