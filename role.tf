@@ -23,12 +23,12 @@ EOF
 }
 
 resource "aws_iam_instance_profile" "ecr_readOnly_profile" {
-  name = "ecr_readOnly_profile"
+  name = "ecr_readOnly_profile-${terraform.workspace}"
   role = "${aws_iam_role.ecr_readOnly_role.name}"
 }
 
 resource "aws_iam_role_policy" "ecr_readOnly_policy" {
-  name = "ecr_readOnly_policy"
+  name = "ecr_readOnly_policy-${terraform.workspace}"
   role = "${aws_iam_role.ecr_readOnly_role.id}"
 
   policy = <<EOF
