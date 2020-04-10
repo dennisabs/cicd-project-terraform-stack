@@ -29,7 +29,7 @@ phases:
       - echo $elb >> elb.txt
   post_build:
     commands:
-      - echo "DONE!!!!!"
+      - echo "DONE!!!!!!"
     
 artifacts:
   files: 
